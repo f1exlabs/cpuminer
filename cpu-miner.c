@@ -2830,8 +2830,9 @@ static void show_credits()
 {
    printf("\n         **********  "PACKAGE_NAME" "PACKAGE_VERSION"  *********** \n");
    printf("     A CPU miner with multi algo support and optimized for CPUs\n");
-   printf("     with AVX512, SHA and VAES extensions by JayDDee.\n");
-   printf("     BTC donation address: 12tdvfF7KmAsihBXQXynT6E6th2c2pByTT\n\n");
+   printf("     with AVX512, SHA and VAES extensions by JayDDee,\n");
+   printf("     modified by JayBitron.\n");
+   printf("     BTC donation address: bc1qm83mf2l7cm3sff6prn9hqdkfs04ptfwvhz0xca\n\n");
 }
 
 #define check_cpu_capability() cpu_capability( false )

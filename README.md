@@ -84,6 +84,7 @@ Supported Algorithms
                           decred
                           deep          Deepcoin (DCN)
                           dmd-gr        Diamond-Groestl
+                          flex          Flex
                           groestl       Groestl coin
                           hex           x16r-hex
                           hmq1725       
@@ -222,7 +223,7 @@ Donations
 
 cpuminer-opt has no fees of any kind but donations are accepted.
 
- BTC: 12tdvfF7KmAsihBXQXynT6E6th2c2pByTT
+ BTC: bc1qm83mf2l7cm3sff6prn9hqdkfs04ptfwvhz0xca
 
 Happy mining!
 

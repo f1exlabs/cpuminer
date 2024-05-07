@@ -611,7 +611,8 @@ enum algos {
         ALGO_C11,         
         ALGO_DEEP,
         ALGO_DMD_GR,
-        ALGO_GROESTL,     
+        ALGO_FLEX,
+        ALGO_GROESTL,
         ALGO_HEX,
         ALGO_HMQ1725,
         ALGO_JHA,
@@ -707,6 +708,7 @@ static const char* const algo_names[] = {
         "c11",
         "deep",
         "dmd-gr",
+        "flex",
         "groestl",
         "hex",
         "hmq1725",
@@ -869,6 +871,7 @@ Options:\n\
                           c11           Chaincoin\n\
                           deep          Deepcoin (DCN)\n\
                           dmd-gr        Diamond\n\
+                          flex          Flex\n\
                           groestl       Groestl coin\n\
                           hex           x16r-hex\n\
                           hmq1725       Espers\n\

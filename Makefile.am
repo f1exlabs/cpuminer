@@ -62,6 +62,22 @@ cpuminer_SOURCES = \
   algo/echo/sph_echo.c \
   algo/echo/echo-hash-4way.c \
   algo/echo/aes_ni/hash.c\
+  algo/flex/cryptonote/crypto/aesb.c \
+  algo/flex/cryptonote/crypto/hash.c \
+  algo/flex/cryptonote/crypto/c_skein.c \
+  algo/flex/cryptonote/cryptonight.c \
+  algo/flex/cryptonote/cryptonight_dark.c \
+  algo/flex/cryptonote/cryptonight_dark_lite.c \
+  algo/flex/cryptonote/cryptonight_fast.c \
+  algo/flex/cryptonote/cryptonight_lite.c \
+  algo/flex/cryptonote/cryptonight_soft_shell.c \
+  algo/flex/cryptonote/cryptonight_turtle.c \
+  algo/flex/cryptonote/cryptonight_turtle_lite.c \
+  algo/flex/cryptonote/crypto/oaes_lib.c \
+  algo/flex/cryptonote/crypto/c_keccak.c \
+  algo/flex/cryptonote/crypto/c_groestl.c \
+  algo/flex/cryptonote/crypto/c_blake256.c \
+  algo/flex/flex-gate.c \
   algo/gost/sph_gost.c \
   algo/groestl/groestl-gate.c \
   algo/groestl/groestl512-hash-4way.c \
@@ -275,7 +291,7 @@ cpuminer_SOURCES = \
   algo/yespower/yespower-opt.c \
   algo/yespower/yespower-ref.c \
   algo/yespower/yespower-blake2b-ref.c
-  
+
 disable_flags =
 
 if USE_ASM
