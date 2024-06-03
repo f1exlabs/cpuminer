@@ -6,7 +6,7 @@
 #include "sha256-hash.h"
 #include "sph_sha2.h"
 
-#if defined(__AVX512F__) && defined(__AVX512VL__) && defined(__AVX512DQ__) && defined(__AVX512BW__)
+#if defined(SIMD512)
   #define SHA256DT_16X32 1
 #elif defined(__x86_64__) && defined(__SHA__)
   #define SHA256DT_X86_SHA256 1
@@ -500,10 +500,10 @@ bool register_sha256dt_algo( algo_gate_t* gate )
 #if defined(SHA256DT_16X32)
     gate->scanhash = (void*)&scanhash_sha256dt_16x32;
 #elif defined(SHA256DT_X86_SHA256)
-    gate->optimizations = SHA_OPT;
+    gate->optimizations = SSE2_OPT | SHA256_OPT;
     gate->scanhash = (void*)&scanhash_sha256dt_x86_x2sha;    
 #elif defined(SHA256DT_NEON_SHA256)
-    gate->optimizations = SHA_OPT;
+    gate->optimizations = NEON_OPT | SHA256_OPT;
     gate->scanhash = (void*)&scanhash_sha256dt_neon_x2sha;
 #elif defined(SHA256DT_8X32)
     gate->scanhash = (void*)&scanhash_sha256dt_8x32;
